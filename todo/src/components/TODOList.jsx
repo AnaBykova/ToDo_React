@@ -30,8 +30,10 @@ function TODOList({ todos }) {
   return (
     <ol className="todo_list">
       {todos && todos.length > 0 ? (
+        // Render list items
         todos?.map((item, index) => <Item key={index} item={item} />)
       ) : (
+        // Render empty state message
         <p>Seems lonely in here, what are you up to?</p>
       )}
     </ol>
